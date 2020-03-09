@@ -17,4 +17,5 @@ This egg offers you a variable to add your email in order to have your server sh
   2. If the server's IP is static or dynamic.
 
 If something breaks, ping me in the `#eggs` channel on the Pterodactyl Discord and I'll fix it. @wistlyr#6900.
+
 ![SCP:SL working.](https://jar.phosphor.us/5bihppb.png "SCP:SL working.")
