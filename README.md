@@ -12,5 +12,5 @@ By default, SCP:SL uses port 7777. This can be changed with your port setting au
 This egg offers you a variable to add your email in order to have your server show up on the public server list. Before doing this, you must verify your server with the developers. Instructions are as follows:
 * Make sure your server complies with the [verified server rules](https://scpslgame.com/Verified_server_rules.pdf).
 * Send an email to `server.verification@scpslgame.com` from your configured contact email with the following information:
-* 1. The **public** IPv4 address of your server, with port. e.g. `69.69.69.69:7777`
-* 2. If the server's IP is static or dynamic.
+  1. The **public** IPv4 address of your server, with port. e.g. `69.69.69.69:7777`
+  2. If the server's IP is static or dynamic.
