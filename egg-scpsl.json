@@ -3,14 +3,14 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2020-03-09T00:54:42-04:00",
+    "exported_at": "2020-03-09T01:05:52-04:00",
     "name": "SCP: Secret Laboratory",
     "author": "lumi@hedr.al",
     "description": "The latest vanilla version of SCP:SL running through MultiAdmin for compatibility. LocalAdmin does not work. No SMod2.",
     "image": "quay.io\/parkervcp\/pterodactyl-images:debian_mono-5-complete",
     "startup": "mono MultiAdmin.exe --port {{SERVER_PORT}}",
     "config": {
-        "files": "{\r\n    \"scp_multiadmin.cfg\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"use_new_input_system: true\": \"use_new_input_system: false\",\r\n            \"max_players:\": \"max_players: {{server.build.env.MAX_PLAYERS}}\"\r\n        }\r\n    },\r\n    \".config\/SCP Secret Laboratory\/config\/7777\/config_gameplay.txt\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"server_ip:\": \"server_ip: 0.0.0.0\",\r\n            \"forward_ports: true\": \"forward_ports: false\",\r\n            \"contact_email:\": \"contact_email: {{server.build.env.CONTACT_EMAIL}}\",\r\n            \"max_players:\": \"max_players: {{server.build.env.MAX_PLAYERS}}\"\r\n        }\r\n    }\r\n}",
+        "files": "{\r\n    \"scp_multiadmin.cfg\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"use_new_input_system: true\": \"use_new_input_system: false\",\r\n            \"max_players:\": \"max_players: {{server.build.env.MAX_PLAYERS}}\"\r\n        }\r\n    },\r\n    \".config\/SCP Secret Laboratory\/config\/{{SERVER_PORT}}\/config_gameplay.txt\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"server_ip:\": \"server_ip: 0.0.0.0\",\r\n            \"forward_ports: true\": \"forward_ports: false\",\r\n            \"contact_email:\": \"contact_email: {{server.build.env.CONTACT_EMAIL}}\",\r\n            \"max_players:\": \"max_players: {{server.build.env.MAX_PLAYERS}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Waiting for players\",\r\n    \"userInteraction\": []\r\n}",
         "logs": "{\r\n    \"custom\": false,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
         "stop": "EXIT"
